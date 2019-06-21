@@ -18,8 +18,8 @@ fi = (function() {
       let arr = []
       let keys = Object.keys(collection)
 
-      for (let i = 0; i < collection.length; i++) {
-        arr.push(callback(collection[i]))
+      for (let i = 0; i < keys.length; i++) {
+        arr.push(callback(keys[i]))
       }
 
       return arr
