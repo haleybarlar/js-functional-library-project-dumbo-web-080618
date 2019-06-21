@@ -7,8 +7,12 @@ fi = (function() {
     each: function(collection, callback) {
       const values = Object.values(collection)
 
-      for (let i = 0; i < collection.length; i++) {
-        callback(collection[i].value)
+      // for (let i = 0; i < collection.length; i++) {
+      //   callback(collection[i].value)
+      // }
+
+      for (let i = 0; i < values.length; i++) {
+        callback(values[i])
       }
       return collection
     },
