@@ -18,7 +18,7 @@ fi = (function() {
       let arr = []
 
       for (let i = 0; i < arr2.length; i++) {
-        let result = callback(collection[i])
+        
         arr.push(result)
       }
 
