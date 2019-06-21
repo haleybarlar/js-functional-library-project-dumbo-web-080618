@@ -29,7 +29,7 @@ fi = (function() {
       number = 0
 
       for (let i = 0; i < collection.length; i++) {
-        let number += callback(acc, collection[i], collection)
+        let number += callback(acc, collection[i])
       }
 
       return number
