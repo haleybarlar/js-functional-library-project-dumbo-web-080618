@@ -30,7 +30,7 @@ fi = (function() {
         callback(acc, collection[i])
       }
 
-      return number
+      // return number
     },
 
     functions: function() {
