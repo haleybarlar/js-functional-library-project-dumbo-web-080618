@@ -29,10 +29,11 @@ fi = (function() {
       acc = 0
 
       for (let i = 0; i < collection.length; i++) {
-        acc += callback(collection[i])
+        acc = callback(collection[i])
       }
 
       return acc
+
     },
 
     functions: function() {
