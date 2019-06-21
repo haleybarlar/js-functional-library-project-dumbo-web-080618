@@ -25,7 +25,10 @@ fi = (function() {
       return arr
     },
 
-    reduce: function() {
+    reduce: function(collection, callback, [acc]) {
+      for (let i = 0; i < collection.length; i++) {
+        acc += callback(collection[i])
+      }
 
     },
 
