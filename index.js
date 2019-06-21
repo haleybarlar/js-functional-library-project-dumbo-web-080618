@@ -26,13 +26,13 @@ fi = (function() {
     },
 
     reduce: function(collection, callback, acc) {
-      acc = 0
+      number = 0
 
       for (let i = 0; i < collection.length; i++) {
-        acc = callback(collection[i])
+        let number += callback(acc, collection[i], collection)
       }
 
-      return acc
+      return number
     },
 
     functions: function() {
