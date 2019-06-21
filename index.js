@@ -16,10 +16,10 @@ fi = (function() {
 
     map: function(collection, callback) {
       let arr = []
-      let keys = Object.keys(collection)
+      let values = Object.values(collection)
 
-      for (let i = 0; i < keys.length; i++) {
-        arr.push(callback(parseInt(keys[i])))
+      for (let i = 0; i < values.length; i++) {
+        arr.push(callback(values[i]))
       }
 
       return arr
