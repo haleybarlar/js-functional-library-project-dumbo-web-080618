@@ -6,8 +6,9 @@ fi = (function() {
 
     each: function(collection, callback) {
       for (let i = 0; i <= collection.length; i++) {
-        return callback(collection[i])
+        callback(collection[i])
       }
+      return collection
     },
 
     map: function() {
