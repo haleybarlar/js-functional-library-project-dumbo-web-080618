@@ -22,7 +22,6 @@ fi = (function() {
       }
 
       return arr
-
     },
 
     reduce: function() {
