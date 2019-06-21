@@ -21,6 +21,8 @@ fi = (function() {
         arr.push(callback(collection[i]))
       }
 
+      return arr
+
     },
 
     reduce: function() {
