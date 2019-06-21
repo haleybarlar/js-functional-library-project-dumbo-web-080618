@@ -15,7 +15,7 @@ fi = (function() {
     },
 
     map: function(collection, callback) {
-      let arr2 = (...collection)
+      let arr2 = [...collection]
 
     },
 
