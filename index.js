@@ -27,7 +27,7 @@ fi = (function() {
 
     reduce: function(collection, callback, acc) {
       for (let i = 0; i < collection.length; i++) {
-        callback(acc, collection[i], collection)
+        callback(acc, collection[i])
       }
 
       return number
