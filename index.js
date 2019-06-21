@@ -26,10 +26,8 @@ fi = (function() {
     },
 
     reduce: function(collection, callback, acc) {
-      number = 0
-
       for (let i = 0; i < collection.length; i++) {
-        callback(acc, collection[i])
+        callback(acc, collection[i], collection)
       }
 
       return number
