@@ -17,8 +17,8 @@ fi = (function() {
     map: function(collection, callback) {
       let arr = []
 
-      for (let i = 0; i < callback.length; i++) {
-        console.log()
+      for (let i = 0; i < collection.length; i++) {
+        arr.push(callback(collection[i]))
       }
 
       return arr
