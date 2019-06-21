@@ -18,8 +18,8 @@ fi = (function() {
       let arr = []
 
       for (let i = 0; i < arr2.length; i++) {
-        
-        arr.push(result)
+
+        arr.push("something")
       }
 
       return arr
