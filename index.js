@@ -15,7 +15,11 @@ fi = (function() {
     },
 
     map: function(collection, callback) {
-      let arr2 = [...collection]
+      let arr = []
+
+      for (let i = 0; i < arr2.length; i++) {
+        arr.push(callback(collection[i]))
+      }
 
     },
 
